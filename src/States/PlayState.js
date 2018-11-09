@@ -1,10 +1,10 @@
 var PlayState = new Kiwi.State('PlayState');
 
 /**
-* The PlayState in the core state that is used in the game. 
+* The PlayState in the core state that is used in the game.
 *
 * It is the state where majority of the functionality occurs 'in-game' occurs.
-* 
+*
 *
 * @class playState
 * @extends State
@@ -21,12 +21,13 @@ PlayState.create = function () {
 
     //Switch the background colour back to white from purple
     this.game.stage.color = 'ffffff';
+    this.game.fullscreen;
 
     //Variables relating to the state of the game
     this.gameStarted = false;
     this.gameEnded = false;
 
-    //Values pertaining to physics based logic 
+    //Values pertaining to physics based logic
     this.gravity = 1;
     this.xSpeed = 3;
     this.ySpeed = 0;
