@@ -28,14 +28,14 @@ PlayState.create = function () {
     this.gameEnded = false;
 
     //Values pertaining to physics based logic
-    this.gravity = 1;
-    this.xSpeed = 3;
+    this.gravity = 0.95;
+    this.xSpeed = 10;
     this.ySpeed = 0;
-    this.maxYSpeed = 16;
+    this.maxYSpeed = 12;
 
-    this.flapSpeed = -16;
-    this.pipeDistance = 400;
-    this.pipeGap = 260;
+    this.flapSpeed = -12;
+    this.pipeDistance = 300;
+    this.pipeGap = 500;
 
     //The starting coordinates of the bird.
     this.startX = (this.game.stage.width / 2) - 46
